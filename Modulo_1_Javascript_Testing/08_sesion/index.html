@@ -3,42 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase de Javascript 8</title>
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <h1>Lista de Pokémon</h1>
+    <div id="pokemon-container"></div>
 </body>
 <script>
-    // console.log("Inicio");
-    // setTimeout(()=>{
-    //     console.log("Espera de 5 segundos")
-    // }, 5000)
-    // console.log("Fin");
-
-    //Promesa
-    // console.log("Bienvenidos a la página web")
-    // console.log("Tarea 1")
-    // const Promesa = new Promise((resolve, reject)=>{
-    //     setTimeout(()=>{
-    //         let exito = true;
-    //         if(exito) resolve("Tarea 2")
-    //         else reject("Promesa rechazada")
-    //     },8000)
-    // })
-    // console.log("Tarea 3")
-    // console.log(Promesa)
-    // Promesa.then(resultado => console.log(resultado)).catch(error => console.log(error));
-
-   async function obtenerDatos(){
-    console.log("Obteniendo datos...");
-    let respuesta = await new Promise(resolve =>
-        setTimeout(() => resolve("Datos recibidos"), 10000)
-    ).then(mensaje => console.log(mensaje)); 
-}
-
-    obtenerDatos();
-    console.log("Este mensaje se muestra antes de que lleguen los datos");
-
-
+   async function obtenerPokemon() {
+        const container = document.getElementById("pokemon-container");
+        for (let i = 1; i <= 30; i++) {
+            try {
+                const respuesta = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
+                const data = await respuesta.json();
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `
+                    <img src="${data.sprites.front_default}" alt="${data.name}">
+                    <h2>${data.name}</h2>
+                `;
+                container.appendChild(card);
+            } catch (error) {
+                console.log("Error al obtener el Pokémon: ", error);
+            }
+        }
+    }
+    obtenerPokemon();
 </script>
 </html>
