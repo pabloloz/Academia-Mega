@@ -1,6 +1,7 @@
-function saludar(nombre){
+export function saludar(nombre) {
     return `Hola, ${nombre}! Bienvenido a tu clase de Javascript`
 }
-function despedir(nombre){
+
+export function despedir(nombre) {
     return `Adios, ${nombre}! Nos vemos después`
 }

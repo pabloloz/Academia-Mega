@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+    background-color: rgb(216, 213, 213);
+}
+form{
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+label,input{
+    display: block;
+    margin-bottom: 10px;
+    max-width: 300px;
+    padding: 8px 12px;
+}
+button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
