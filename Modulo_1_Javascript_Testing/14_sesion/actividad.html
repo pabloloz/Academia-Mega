@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Clase 14</title>
+    <style>
+        *{
+            /* border: 1px solid red; */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .pass{
+            color: green;
+        }
+        .fall{
+            color: red;
+        }
+        pre{
+            background-color: rgb(202, 202, 202);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing: Invertir Texto</h1>
+    <div id="result">
+
+    </div>
+    <script>
+        //Función bajo prueba
+        function invertirTexto(texto){
+            if (typeof texto !== "string") return "";
+            return texto.split("").reverse().join("")
+        }
+
+        //Sistema de test simple
+        function expect(actual){
+            return{
+                toBe(expected){
+                    const passed = actual === expected;
+                    const message = passed?
+                    `Pasó: ${actual} === ${expected}`
+                    :`Fallo: ${actual} !== ${expected}`;
+
+                    const result = document.createElement("pre");
+                    result.textContent = message;
+                    result.className = passed? "pass" : "fall";
+                    document.getElementById("result").appendChild(result);
+                }
+            }
+        }
+
+        //Pruebas
+        expect(invertirTexto("hola")).toBe("aloh");
+        expect(invertirTexto("TDD")).toBe("DDT");
+        expect(invertirTexto(123)).toBe(321);
+        expect(invertirTexto("123")).toBe("321");
+        expect(invertirTexto("ABC123")).toBe("CBA321");
+        expect(invertirTexto(false)).toBe(false);
+    </script>
+</body>
+</html>

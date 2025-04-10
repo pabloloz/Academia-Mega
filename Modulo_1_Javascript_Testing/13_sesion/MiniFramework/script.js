@@ -18,9 +18,17 @@ function expect(actual) {
     };
 }
 
-function sumer(a, b) {
+function sumar(a, b) {
     return a + b;
 }
 
-expect(sumer(2, 3)).toBe(5);
-expect(sumer(10, 0)).toBe(10);
+function validarUsuario(usuario) {
+    return usuario.nombre && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usuario.correo);
+}
+
+const usuarioValido = { nombre: "Ana", correo: "ana@mail.com" };
+const usuarioValido2 = { nombre: "Ana2", correo: "ana@mail.com" };
+const usuarioInvalido = { nombre: "Pablo", correo: "Pablo@mail" };
+
+expect(usuarioValido).toEqual(usuarioValido2);
+// expect(validarUsuario(usuarioInvalido)).toBe(false);
