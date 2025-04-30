@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
   usuarios = [
-    { nombre: "Juan", edad: 25, profesion: "Ingeniero" },
-    { nombre: "Ana", edad: 29, profesion: "Diseñadora" },
-    { nombre: "Luis", edad: 22, profesion: "Estudiante" },
-    { nombre: "Pablo", edad: 22, profesion: "Ingeniero" },
+    { nombre: "Juan", edad: 25, profesion: " Ingeniero" },
+    { nombre: "Ana", edad: 29, profesion: " Diseñadora" },
+    { nombre: "Luis", edad: 22, profesion: " Estudiante" },
+    { nombre: "Pablo", edad: 22, profesion: " Ingeniero" },
     { nombre: "Carlos", edad: 28, profesion: "Maestro" },
   ];  
 

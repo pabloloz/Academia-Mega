@@ -1,0 +1,56 @@
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .categoria-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .categoria-buttons button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-weight: 500;
+  }
+  
+  .categoria-buttons button:hover {
+    background-color: #d4d4d4;
+    transform: translateY(-2px);
+  }
+  
+  .categoria-buttons button.activo {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .producto {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    background-color: #fefefe;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .agotado {
+    opacity: 0.6;
+    font-style: italic;
+  }
+  
