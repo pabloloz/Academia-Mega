@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+  }
+  
+  .home-container {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+  
+  .home-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  

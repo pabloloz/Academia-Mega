@@ -1,0 +1,12 @@
+<p class="titulo">Gestor de Rutas</p>
+
+<nav class="menu">
+  <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">Proyecto</a>
+  <a routerLink="/home" routerLinkActive="activo">Home</a>
+  <a routerLink="/card-padre" routerLinkActive="activo">Card</a>
+  <a routerLink="/product-manager" routerLinkActive="activo">Product Manager</a>
+  <a routerLink="/todo" routerLinkActive="activo">Todo</a>
+  <a routerLink="/error" routerLinkActive="activo">Error</a>
+</nav>
+
+<router-outlet></router-outlet>
