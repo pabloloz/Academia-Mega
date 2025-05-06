@@ -1,0 +1,47 @@
+.home-container {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+  
+  .home-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    padding: 0.8rem 1.6rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  

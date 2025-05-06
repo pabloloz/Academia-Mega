@@ -7,14 +7,10 @@ import { ProductosInfoComponent } from './Page/productos-info/productos-info.com
 import { CardComponent } from './Components/card/card.component';
 import { CardPadreComponent } from './Page/card-padre/card-padre.component';
 import { ServiciosPageComponent } from './Page/servicios-page/servicios-page.component';
-import { FormularioComponent } from './Page/formulario/formulario.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: FormularioComponent},
-    {
-        path: 'servicios',
         component: ServiciosPageComponent},
     {
         path: 'componentes',

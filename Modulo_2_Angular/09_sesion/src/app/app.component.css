@@ -5,7 +5,7 @@
 }
 
 .importante {
-  color: rgb(102, 29, 29);
+  color: red;
   font-weight: bold;
 }
 
@@ -44,12 +44,12 @@
 }
 
 .menu a:focus {
-  outline: 2px solid rgb(102, 29, 29);
+  outline: 2px solid red;
   outline-offset: 2px;
 }
 
 .menu a.activo {
-  background-color: rgb(102, 29, 29);
+  background-color: red;
   color: white;
 }
 
