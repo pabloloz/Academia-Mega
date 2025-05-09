@@ -1,0 +1,18 @@
+<div class="layout">
+  <!-- Columna de productos -->
+  <div class="lista">
+    <h1>Lista de Productos</h1>
+    <p>{{ itemSeleccionado?.nombre }}</p>
+
+    <app-productos
+      *ngFor="let item of items"
+      [info]="item"
+      (seleccionado)="seleccionarItem($event)">
+    </app-productos>
+  </div>
+
+  <!-- Columna de detalles -->
+  <div class="detalles">
+    <app-detalles [item]="itemSeleccionado"></app-detalles>
+  </div>
+</div>

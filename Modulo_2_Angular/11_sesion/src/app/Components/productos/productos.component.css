@@ -1,0 +1,33 @@
+div {
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  div:hover {
+    transform: scale(1.03);
+  }
+  
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }

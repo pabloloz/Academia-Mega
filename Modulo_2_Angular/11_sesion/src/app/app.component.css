@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.importante {
+  color: rgb(102, 29, 29);
+  font-weight: bold;
+}
+
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  color: #333;
+}
+
+/* Menú principal */
+.menu {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.menu a:hover {
+  background-color: #d6d6d6;
+  transform: translateY(-2px);
+}
+
+.menu a:focus {
+  outline: 2px solid rgb(102, 29, 29);
+  outline-offset: 2px;
+}
+
+.menu a.activo {
+  background-color: rgb(102, 29, 29);
+  color: white;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+  }
+
+  .menu a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  /* Optional: barra de scroll más estética */
+  .menu::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .menu::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  .menu::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
