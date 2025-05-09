@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f6f8;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  
+  /* Lista de usuarios */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Detalle del usuario */
+  .detail {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .detail img {
+    width: 150px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .detail h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .detail p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .detail strong {
+    color: #111;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .detail {
+      margin-top: 1.5rem;
+    }
+  }
+  
