@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "S2Swf6dESac=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\plopezo\\Documents\\Academia-Mega\\Proyecto C#\\PrimeraApi\\PrimeraAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\plopezo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\plopezo\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
